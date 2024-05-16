@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+
+}
+
+.first-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #343F4F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page i {
+    color: #2aaf76;
+    font-size: 40px;
+}
+
+.first-page .continue-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #343F4F;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me a{
+    color: #FC6D6D;
+}
+
+.about-me a:hover{
+    color: #343F4F;
+}
+
+.about h1{
+    color: #2aaf76;
+    padding-bottom: 20px;
+}
+
+.about p{
+    color: #343F4F;
+}
+
+.about{
+    padding: 30px 20px;
+}
+
+.about .row{
+    flex-wrap: nowrap;
+}
+.about .row img{
+    width: 100%;
+    max-width: 450px;
+}
+
+
+
+.about .images-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.about .border-img{
+    position: absolute;
+    right: -118px;
+    width: 693px!important;
+    top: -124px;
+} */
+
+.resume{
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+   padding: 30px 20px;
+}
+
+.resume .row{
+    
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.resume .container{
+
+    margin: 0;
+}
+
+.resume .col{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    text-align: left;
+}
+
+.resume .col .title{
+    font-size: 25px;
+    color: #343F4F;
+}
+
+.resume h1{
+    color: #2aaf76;
+    padding-bottom: 20px;
+}
+
+.resume .col .line{
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #F85C70;
+    margin: 5px 0;
+}
+
+.resume .col .text{
+    padding: 20px 20px;
+}
+
+.resume .date{
+    font-size: 20px;
+    color: #F85C70;
+    margin: 10px 0 5px;
+}
+
+.resume .col .job-title{
+    color: #2aaf76;
+    font-size: 15px;
+}
+
+
+.myBar {
+    width: 1%;
+    height: 30px;
+    background: rgba(14, 73, 14, 0.9);
+    border-radius: 17px;
+  }
+
+
+  .progressbar2 .myProgress {
+    width: 100%;
+    background-color: #2aaf768f;
+    border-radius: 17px;
+  }
+  
+  .progressbar2 .myBar {
+    width: 0%;
+    height: 30px;
+    background: #2aaf76;
+    border-radius: 17px;
+  }
+
+
+  .progress-container {
+    width: 100%;
+    background: #2aaf768f;
+    border: 1px solid #2aaf768f;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #2aaf76;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.6s ease;
+}
