@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
+
 <html lang="en">
 
 <head>
@@ -9,8 +9,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>My Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="assets/main.css">
+    <title>My Portfolio</title>
 </head>
 
 <body>
@@ -39,16 +43,13 @@
                 <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#references">References</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
         </ul>
         <div class="about container">
             <div class="row">
                 <div class="col">
-                    <h1>Hello, World!</h1>
+                    <h1 class="animate__animated animate__rubberBand ">Hello, World!</h1>
                     <p> 👋 I'm Bernadett Megyesi, a passionate Junior Frontend Developer eager to embark on a journey of
                         innovation and creativity in the ever-evolving realm of web development.</p>
 
@@ -66,16 +67,20 @@
                         where I can learn from experienced professionals while bringing fresh perspectives to the table.
 
                         Let's connect and explore how we can create impactful digital experiences together!</p>
+                        <div class="cv">
+                            <a href="/cv.html">Hungarian CV</a>
+                            <a href="/cv2.html">English CV</a>
+                        </div>
                 </div>
                 <div class="col images-col">
-                    <img class="me" src="assets/img/me.png">
+                    <img class="me animate__animated animate__backInRight" src="assets/img/me.png">
                 </div>
             </div>
 
         </div>
     </section>
     <section id="resume" class="resume">
-        <h1>My Resume</h1>
+        <h1 class="animate__animated animate__bounce animate__infinite	infinite">My Resume</h1>
         <div class="container text-center">
             <div class="row">
                 <div class="col">
@@ -127,9 +132,7 @@
         </div>
     </section>
     <section id="references" class="references">
-        <div class="ref-title">
-            <h1>References</h1>
-        </div>
+    
         <div class="ref-div">
             <div>
                 <div class="ref-subtitle">University</div>
@@ -156,14 +159,15 @@
     <section id="contact" class="contact">
         <div class="card shadow" style="width: 21rem;">
             <div class="card-body">
-              <h5 class="card-title">Get in touch</h5>
+              <h5 class="card-title animate__animated animate__shakeY animate__infinite	infinite">Get in touch</h5>
               <span class="line"></span>
               <p class="card-text">Send a message.</p>
               <a href="#" class="card-link"><i class="bi bi-envelope"></i>megyesibernadett@gmail.com</a>
-              <a href="#" class="card-link"><i class="bi bi-geo-alt"></i>Teréz krt, 1066, Budapest</a>
+              <!--<a href="#" class="card-link"><i class="bi bi-geo-alt"></i>Teréz krt, 1066, Budapest</a>-->
             </div>
           </div>
     </section>
+    
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">

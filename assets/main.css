@@ -110,7 +110,7 @@ body {
 
 .about-me {
     width: 100%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -145,7 +145,19 @@ body {
     max-width: 450px;
 }
 
+.cv{
+    gap: 30px;
+    display: flex;
+    margin: 30px 0px;
+}
 
+.cv a{
+    text-decoration: none;
+}
+
+.cv a:hover{
+    color: #2aaf76;
+}
 
 .about .images-col{
     display: flex;
@@ -163,7 +175,7 @@ body {
 
 .resume{
     width: 100%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -286,9 +298,8 @@ body {
 }
 
 .ref-div{
-    display: flex;
     gap: 50px;
-    padding: 0 30px;
+    padding: 0 40px;
 }
 
 .contact{
