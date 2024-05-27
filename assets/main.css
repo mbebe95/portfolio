@@ -116,6 +116,19 @@ body {
     flex-direction: column;
 }
 
+.collapse .nav-link{
+    color: var(--red)!important;
+}
+
+.collapse .nav-link:hover{
+    color: var(--blue)!important;
+}
+
+
+.navbar-text a:hover{
+    color: var(--green)!important;
+}
+
 .about-me a{
     color: var(--red);
 }
@@ -277,6 +290,15 @@ body {
     margin: 10px 0 5px;
 }
 
+
+.ref-div a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+.ref-div a:hover{
+    color: var(--red);
+}
 
 .references{
     padding: 30px 20px;
